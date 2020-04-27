@@ -1,0 +1,7 @@
+# excluded FOLDERS
+DebugConfig/
+output/
+
+#keil middle file
+*.uvguix.*
+*.uvoptx
