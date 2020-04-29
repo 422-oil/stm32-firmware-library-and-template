@@ -359,13 +359,13 @@
             <wLevel>0</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>0</uC99>
+            <uC99>1</uC99>
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\user;.\Libraries\STM32F10x_StdPeriph_Driver\inc;.\Libraries\CMSIS\CM3\CoreSupport;.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x;.\HD_drive;.\SW_app</IncludePath>
+              <IncludePath>.\user;.\Libraries\STM32F10x_StdPeriph_Driver\inc;.\Libraries\CMSIS\CM3\CoreSupport;.\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x;.\HD_driver;.\SW_app</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -412,6 +412,11 @@
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\user\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\user\stm32f10x_it.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -561,10 +566,89 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>HD_drive</GroupName>
+          <GroupName>HD_driver</GroupName>
+          <Files>
+            <File>
+              <FileName>beep.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HD_driver\beep.c</FilePath>
+            </File>
+            <File>
+              <FileName>HD_lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HD_driver\HD_lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>HD_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HD_driver\HD_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>HD_RC522.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HD_driver\HD_RC522.c</FilePath>
+            </File>
+            <File>
+              <FileName>HD_systick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HD_driver\HD_systick.c</FilePath>
+            </File>
+            <File>
+              <FileName>HD_timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HD_driver\HD_timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>HD_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HD_driver\HD_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>inflash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HD_driver\inflash.c</FilePath>
+            </File>
+            <File>
+              <FileName>iwdg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\HD_driver\iwdg.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>SW_APP</GroupName>
+          <Files>
+            <File>
+              <FileName>key_board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SW_app\key_board.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd_12864.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SW_app\lcd_12864.c</FilePath>
+            </File>
+            <File>
+              <FileName>main_cmu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SW_app\main_cmu.c</FilePath>
+            </File>
+            <File>
+              <FileName>misc_func.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SW_app\misc_func.c</FilePath>
+            </File>
+            <File>
+              <FileName>oil_card_reader.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SW_app\oil_card_reader.c</FilePath>
+            </File>
+            <File>
+              <FileName>public.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SW_app\public.c</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>
